@@ -141,6 +141,18 @@
         <li>재능기부 동아리 및 주민 협업 행사 활성화, 만족도 조사를 통한 서비스 지속 개선으로 지역 문화 거점 역할 강화</li>
         <li>보안 점검과 체계적 업무 매뉴얼로 신뢰받는 안전한 도서관 운영 환경 조성</li>
     </ul>
+    <script>
+      const link = document.getElementById('link1');
 
+      // 클릭 시 클래스 추가
+      link.addEventListener('click', () => {
+        link.classList.add('clicked');
+      });
+
+      // 페이지가 새로 로드 될 때 초기화
+      window.addEventListener('load', () => {
+        link.classList.remove('clicked');
+      });
+    </script>
 </body>
 </html>
